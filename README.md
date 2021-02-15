@@ -2,16 +2,16 @@
 
 ## Overview
 
-This solution is based on Spring Boot and it has been designed with Swagger. The following endpoints have been implemented to operate over the chemical patents database:
+This solution is a REST API based on Spring Boot defined with Swagger. The following endpoints have been implemented to operate over the chemical patents database:
 
 ![](pictures/api_preview.png)
   
 
 # Solution details
 
-The solution has been developed with a Hexagonal Architecture (AKA Ports & Adapters), treating input, output, persistence and iteractions as an external piece of the application.
+The current solution has been designed following SOLID principles for a good understanding, flexibility and maintainability. It's been developed with a Hexagonal Architecture (AKA Ports & Adapters), treating input, output, persistence and iteractions as an external piece of the application.
 
-Applying DDD within this architecture, we can identify the domain and use cases and isolate it.
+Applying DDD within this architecture, we can identify the domain, use cases and isolate it.
 
 ![Hexagonal Architecture](https://blog.octo.com/wp-content/uploads/2020/06/archi_hexa_en_06-1024x526.png)
 
@@ -22,6 +22,8 @@ On the other hand, OpenNLP Java API has been used for Named-entity recognition, 
 Also, National Library of Medicine MetaMapLite API was included before in the project to classify the different ChemDNER bio documents but was discarded at the end. 
 
 *See more: https://metamap.nlm.nih.gov/MetaMapLite.shtml*
+
+Finally, this software can follow 12 factor app methodology to be distributed and to be run in the cloud as a service.
 
 
 ### Installation
