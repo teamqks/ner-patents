@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  context-path:
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  data:
+    mongodb:
+      uri: api-database
+
+chemicals:
+  extraction-tags:
+    application: application-reference
+    date: date
+    title: invention-title
+    abstract-info: abstract
+    full-text: description
+
+
