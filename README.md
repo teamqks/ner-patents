@@ -1,3 +1,22 @@
+# Evaluation (Michael)
+
+### Build and Run
+
+Works after bugfix of mongodb connection string
+
+```
+ mvn clean install && docker build -t api-docker-image . && docker-compose up
+```
+
+### Data processing
+```
+http://localhost:8080/patents/upload
+{
+  "patentsUploaded": 7173,
+  "classificationsUploaded": 923
+}
+```
+
 # Chemical Patent Operations API 
 
 Build and run
