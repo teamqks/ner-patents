@@ -1,5 +1,12 @@
 # Chemical Patent Operations API 
 
+Build and run
+
+```
+ mvn clean install && docker build -t api-docker-image . && docker-compose up
+```
+
+
 ## Overview
 
 This solution is a REST API based on Spring Boot defined with Swagger. The following endpoints have been implemented to operate over the chemical patents database:
