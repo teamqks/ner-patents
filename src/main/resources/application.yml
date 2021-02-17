@@ -13,7 +13,7 @@ spring:
     allow-bean-definition-overriding: true
   data:
     mongodb:
-      uri: api-database
+      uri: mongodb://localhost:27017/chemicals
 
 chemicals:
   extraction-tags:
